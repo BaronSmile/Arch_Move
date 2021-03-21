@@ -1,0 +1,28 @@
+@import '../../mixinStyle/mixin';
+
+.footer {
+  @include p-top-bottom;
+  border-top: 1px solid #585858;
+  background-color: #F9F9F9;
+
+  .container {
+    @include header-container;
+    display: flex;
+    justify-content: space-between;
+
+    .footer_nav{
+      a{
+        color: #585858;
+        font-size: 12px;
+        font-weight: 300;
+        margin-left: 40px;
+
+        &:hover{
+          color:#FD665E;
+          border-bottom: 1px solid #FD665E;
+        }
+      }
+
+    }
+  }
+}

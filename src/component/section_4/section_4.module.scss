@@ -1,0 +1,77 @@
+@import '../../mixinStyle/mixin';
+
+
+.section4 {
+  background-color: #F9F9F9;
+}
+
+.container {
+  @include container;
+  @include p-top-bottom;
+
+  h1 {
+    @include title;
+    width: 45%;
+  }
+
+  .comment {
+    width: 70%;
+    display: flex;
+    margin-left: auto;
+  }
+
+  blockquote {
+    font-size: 32px;
+    font-weight: 300;
+    padding: 1em 0 0 2em;
+
+    .user {
+      font-size: 16px;
+      display: block;
+      padding-top: 2em;
+
+      .name {
+        font-weight: 700;
+      }
+    }
+  }
+
+  .arrow {
+
+    display: flex;
+    align-items: flex-end;
+  }
+
+    button {
+      background-image: url("../../assets/icon/arrow.svg");
+      background-repeat: no-repeat;
+      background-position: 50%;
+      background-color: transparent;
+      display: block;
+      width: 45px;
+      height: 45px;
+
+      &:hover {
+        background-image: url("../../assets/icon/active-arrow.svg");
+        transform: rotate(180deg);
+        z-index: 3;
+        background-color: #eee;
+      }
+    }
+
+
+  .rightArrow {
+    transform: rotate(180deg);
+
+    &:hover {
+      transform: rotate(0deg);
+    }
+  }
+
+
+  .symbol {
+    color: #FD665E;
+    font-size: 65px;
+  }
+
+}

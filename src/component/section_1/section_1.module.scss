@@ -1,0 +1,36 @@
+@import '../../mixinStyle/mixin';
+
+.container {
+  @include container;
+
+  h1 {
+    @include title(120px);
+
+    span {
+      color: $rose
+    }
+  }
+
+  .info {
+    display: flex;
+    @include m-top;
+
+    .description {
+      font-family: $sf;
+      margin-right: 50px;
+
+      p {
+        @include paragraph;
+      }
+
+      button {
+        @include btn;
+        @include m-top;
+      }
+    }
+
+    img {
+      width: 60%;
+    }
+  }
+}

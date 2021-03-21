@@ -1,0 +1,27 @@
+@import '../../mixinStyle/mixin';
+
+.section5{
+  background-color: #F9F9F9;
+}
+
+.container{
+  @include container;
+  display: flex;
+  align-items: center;
+}
+
+.text{
+  padding-left: 3em;
+
+  h1{
+    @include title();
+    padding-bottom: 2em;
+
+    span{
+      color: #FD665E;
+    }
+  }
+  button{
+    @include btn;
+  }
+}

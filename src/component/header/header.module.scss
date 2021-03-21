@@ -1,0 +1,41 @@
+@import '../../mixinStyle/mixin';
+
+.container {
+  @include header-container;
+
+  .header {
+    font-family: $sf;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+
+  .nav,
+  .navList {
+    display: flex;
+    align-items: center;
+
+    li a {
+      padding: 10px 15px;
+      margin-left: 25px;
+      color: $black;
+      font-size: 14px;
+
+      &:hover{
+        color:#FD665E;
+        border-bottom: 1px solid #FD665E;
+      }
+    }
+  }
+
+  .logged button{
+    font-size: 14px;
+    margin-left: 25px;
+  }
+
+  .signIn{
+    background-color: transparent;
+  }
+
+  .signUp{ @include btn}
+}

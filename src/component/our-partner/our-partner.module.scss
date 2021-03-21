@@ -1,0 +1,62 @@
+@import '../../mixinStyle/mixin';
+
+.ourPartners {
+  background-color: #F9F9F9;
+
+  .container {
+    @include container;
+
+    h1 {
+      @include title();
+    }
+
+    .partners_logo {
+      display: flex;
+      justify-content: space-between;
+
+      span {
+        display: block;
+        width: 40%;
+        height: 100px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+      }
+
+      .partner1 {
+        background-image: url("../../assets/icon/logo-1.1.png");
+        &:hover {
+          background-image: url("../../assets/icon/logo-1.png");
+        }
+      }
+
+      .partner2 {
+         background-image: url("../../assets/icon/logo-2.2.png");
+        &:hover {
+          background-image: url("../../assets/icon/logo-2.png");
+        }
+      }
+
+      .partner3 {
+         background-image: url("../../assets/icon/logo-3.3.png");
+        &:hover {
+          background-image: url("../../assets/icon/logo-3.png");
+        }
+      }
+
+      .partner4 {
+         background-image: url("../../assets/icon/logo-4.4.png");
+        &:hover {
+          background-image: url("../../assets/icon/logo-4.png");
+        }
+      }
+
+      .partner5 {
+         background-image: url("../../assets/icon/logo-5.5.png");
+        &:hover {
+          background-image: url("../../assets/icon/logo-5.png");
+        }
+      }
+    }
+  }
+}

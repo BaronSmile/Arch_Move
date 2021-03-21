@@ -1,0 +1,61 @@
+@import '../../mixinStyle/mixin';
+
+.container {
+  @include container;
+  @include p-top-bottom;
+
+  h1 {
+    @include title();
+    @include p-top-bottom;
+    width: 45%;
+  }
+
+  .description {
+    display: flex;
+    justify-content: space-between;
+
+    img {
+      width: 50%;
+    }
+
+    .text {
+      margin-left: 12em;
+
+
+      article {
+        position: relative;
+
+        &:before {
+          position: absolute;
+          left: -25%;
+        }
+
+        h4 {
+          font-size: 16px;
+        }
+
+        p {
+          padding-bottom: 3em;
+          font-size: 16px;
+          font-weight: 300;
+        }
+      }
+
+
+      .paragraph1:before {
+        content: url("../../assets/icon/Group 7.png");
+      }
+
+      .paragraph2:before {
+        content: url("../../assets/icon/Group 2.png");
+      }
+
+      .paragraph3:before {
+        content: url("../../assets/icon/Group 3.png");
+      }
+      button{
+        @include btn;
+      }
+    }
+  }
+}

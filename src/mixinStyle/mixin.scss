@@ -1,0 +1,49 @@
+$rose: #FD665E;
+$black: #000;
+$sf: "SF UI Display", sans-serif;
+$ny: New York Extra Large, serif;
+
+@mixin header-container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+@mixin container {
+  width: 1030px;
+  margin: 0 auto;
+  padding: 50px 15px;
+
+}
+
+@mixin btn {
+  background-color: $rose;
+  border-radius: 5px;
+  color: white;
+  padding: 14px 24px;
+
+  &:hover {
+    opacity: .8;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+    transition: .3s;
+  }
+}
+
+@mixin paragraph {
+  font-size: 16px;
+  font-family: $sf;
+}
+
+@mixin title($fz:48px) {
+  font-size: $fz;
+  font-family: $ny;
+  line-height: 1;
+}
+
+@mixin m-top {
+  margin-top: 50px;
+}
+
+@mixin p-top-bottom {
+  padding: 50px 0;
+}
